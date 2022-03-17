@@ -84,7 +84,7 @@ input {
 main{
     border: 1px solid black;
     width: 80%;
-    height: 100vh;
+    height: 95vh;
     margin: auto;
     position: relative;
 }
@@ -121,6 +121,8 @@ div#segundo {
 }
 
 .legenda {
+    width: 70%;
+    height: 10%;
     position: absolute;
     top: 70%;
     left: 10%;
@@ -161,4 +163,50 @@ p.detalhe {
     color: gray;
 }
 
+.legenda_sub {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
 
+.legenda_sub a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.legenda_sub a:hover {
+    font-size: 1.1em;
+}
+
+.legenda_sub h2 {
+    display: inline-block;
+    background-color: var(--color1);
+    text-align: center;
+    color: white;
+    padding: 2%;
+    font-weight: normal;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-family: 'Bungee', cursive;
+}
+
+.legenda_sub p {
+    margin-top: 5px;
+    color: black;
+    padding-top: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 0.8em;
+}
+
+/*Configuração do Rodapé*/
+
+footer{
+    background-color: black;
+    text-align: center;
+    height: 5vh;
+    color: white;
+}
+
+footer > p {
+    line-height: 5vh;
+}
