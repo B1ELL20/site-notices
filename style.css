@@ -82,23 +82,35 @@ input {
 /*Configuração Conteúdo*/
 
 main{
-    border: 1px solid black;
     width: 80%;
     height: 95vh;
     margin: auto;
     position: relative;
+    margin-bottom: 50px;
 }
 div.sombra{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
 }
 
 div#destaque {
+    background: repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+      linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/tec.jpeg);
+    background-size: cover;
     position: absolute;
-    border: 1px solid red;
     width: 60%;
     height: 65%;
     top: 5%;
     left: 2%;
+}
+
+div#destaque:hover {
+    width: 61%;
+    height: 66%;
+}
+
+div.lateral:hover {
+    width: 31%;
+    height: 31%;
 }
 
 div.secundario {
@@ -107,15 +119,20 @@ div.secundario {
     left: 65%;
     width: 30%;
     height: 30%;
-    border: 1px solid red;
 }
 
 div#primeiro {
+    background: repeating-linear-gradient(90deg, transparent 0px, transparent 5px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+    linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/lugar.jpg);
+    background-size: cover;
     top: 5%;
     left: 65%;
 }
 
 div#segundo {
+    background: repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+      linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/pexels.jpg);
+    background-size: cover;
     top: 40%;
     left: 65%;
 }
@@ -124,7 +141,7 @@ div#segundo {
     width: 70%;
     height: 10%;
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 10%;
 }
 
@@ -152,7 +169,7 @@ div#segundo {
 
 .legenda p {
     margin-top: 5px;
-    color: black;
+    color: white;
     padding: 5px;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2em;
@@ -192,10 +209,64 @@ p.detalhe {
 
 .legenda_sub p {
     margin-top: 5px;
-    color: black;
+    color: white;
     padding-top: 5px;
     font-family: 'Bebas Neue', cursive;
     font-size: 0.8em;
+}
+img {
+    float: left;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    filter: grayscale(40%);
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+div#um {
+    width: 25%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+div#dois {
+    width: 25%;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+
+div#tres {
+    width: 25%;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+}
+
+.acesso {
+    padding: 10px;
+}
+
+.acesso p {
+    text-align: end;
+    line-height: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.acesso a {
+    text-decoration: none;
+    color: black;
+}
+
+div.acesso:hover {
+    background-color: #91458736;
+    border-radius: 5px;
 }
 
 /*Configuração do Rodapé*/
