@@ -85,94 +85,144 @@ main{
     width: 80%;
     height: 95vh;
     margin: auto;
-    position: relative;
     margin-bottom: 50px;
 }
-div.sombra{
+
+.caixa {
+    margin-left: 5%;
+}
+
+div.sombra {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
 }
 
+.capa {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+}
+
+.secao1 {
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
 div#destaque {
+    width: 100%;
+    height: 100%;
+}
+
+div#destaque a {
+    position: relative;
+    display: block;
     background: repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
       linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/tec.jpeg);
     background-size: cover;
-    position: absolute;
-    width: 60%;
-    height: 65%;
-    top: 5%;
-    left: 2%;
+    width: 100%;
+    height: 100%;
 }
 
-div#destaque:hover {
-    width: 61%;
-    height: 66%;
-}
-
-div.lateral:hover {
-    width: 31%;
-    height: 31%;
-}
-
-div.secundario {
-    position: absolute;
-    top: 5%;
-    left: 65%;
+.secao2 {
+    display: flex;
     width: 30%;
-    height: 30%;
+    height: 100%;
+    flex-direction: column;
 }
 
 div#primeiro {
-    background: repeating-linear-gradient(90deg, transparent 0px, transparent 5px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
-    linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/lugar.jpg);
-    background-size: cover;
-    top: 5%;
-    left: 65%;
+    position: relative;
+    width: 100%;
+    height: 45%;
+    margin-bottom: 5%;
 }
 
 div#segundo {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    margin-top: 5%;
+}
+
+div#primeiro a {
+    display: block;
+    background: repeating-linear-gradient(90deg, transparent 0px, transparent 5px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+    linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/lugar.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+div#segundo a {
+    display: block;
     background: repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
       linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(imagens/pexels.jpg);
     background-size: cover;
-    top: 40%;
-    left: 65%;
+    width: 100%;
+    height: 100%;
 }
 
-.legenda {
+.lin{
+    display: block;
+    position: absolute;
     width: 70%;
     height: 10%;
+    bottom: 25%;
+    left: 5%;
+}
+
+.linkin {
+    display: block;
     position: absolute;
-    top: 65%;
-    left: 10%;
+    width: 80%;
+    height: 10%;
+    left: 5%;
+    bottom: 70%;
 }
 
-.legenda a {
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.legenda a:hover {
-    font-size: 1.1em;
-}
-
-.legenda h2 {
+.lin h2 {
     display: inline-block;
     background-color: var(--color1);
-    width: 30%;
     text-align: center;
     color: white;
-    padding: 2px;
-    font-weight: normal;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 5px;
     border-radius: 3px;
     font-size: 0.8em;
     font-family: 'Bungee', cursive;
 }
 
-.legenda p {
+.linkin h2 {
+    display: inline-block;
+    background-color: var(--color1);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 5px;
+    border-radius: 3px;
+    font-size: 0.5em;
+    font-family: 'Bungee', cursive;
+}
+
+.lin p {
     margin-top: 5px;
     color: white;
-    padding: 5px;
+    padding-top: 5px;
+    margin-left: 10px;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2em;
+}
+
+.linkin p {
+    margin-top: 5px;
+    color: white;
+    padding-top: 5px;
+    margin-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1em;
 }
 
 p.detalhe {
@@ -180,8 +230,22 @@ p.detalhe {
     color: gray;
 }
 
+.linkin p.detalhe {
+    font-size: 0.8em;
+    color: gray;
+}
+
+/*Sub acessos
+*****************************/
+
+.sub {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    height: 20%;
+}
+
 .legenda_sub {
-    position: absolute;
     top: 40%;
     left: 5%;
 }
@@ -228,26 +292,18 @@ img:hover {
 
 div#um {
     width: 25%;
-    position: absolute;
-    top: 80%;
-    left: 5%;
 }
 
 div#dois {
     width: 25%;
-    position: absolute;
-    top: 80%;
-    left: 35%;
 }
 
 div#tres {
     width: 25%;
-    position: absolute;
-    top: 80%;
-    left: 65%;
 }
 
 .acesso {
+    margin-left: 7%;
     padding: 10px;
 }
 

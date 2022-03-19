@@ -5,14 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Notícias</title>
+
         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="normalize.css">
+
     </head>
     <body>
+
         <header>
             <h1>Notícias</h1>
             <p>Seu site preferido de notícias</p>
         </header>
+
         <nav>
+
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Negócios</a></li>
@@ -21,57 +28,85 @@
                 <li><a href="index.html">Tecnologia</a></li>
                 <li><a href="index.html">Música</a></li>
             </ul>
+
             <div>
                 <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
             </div>
+
         </nav>
+
         <main>
-            <div id="destaque" class="sombra">
-                <div class="legenda">
+            <div class="capa">
+                
+                <section class="secao1 caixa">
+
+                    <div id="destaque" class="sombra">
+
+                        <a href="">
+                            <div class="lin">
+                                <h2>Destaque</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="detalhe">10/03/2022</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <section class="secao2 caixa">
+
+                    <div id="primeiro" class="secundario sombra lateral">
+
+                        <a href="">
+                            <div class="linkin">
+                                <h2>Novidades</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="detalhe">10/03/2022</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div id="segundo" class="secundario sombra lateral">
+                        
+                        <a href="">
+                            <div class="linkin">
+                                <h2>No Mundo</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="detalhe">10/03/2022</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="sub">
+                <div class="acesso" id="um">
                     <a href="">
-                        <h2>Destaque</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="detalhe">10/03/2022</p>
+                        <img src="imagens/politica-monetaria-o-que-e-definicao-tipos-e-instrumentos-2-1024x614.jpg" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </a>
+                </div>
+                <div class="acesso" id="dois">
+                    <a href="">
+                        <img src="imagens/inovacao-875x500.jpg" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </a>
+                </div>
+                <div class="acesso" id="tres">
+                    <a href="">
+                        <img src="imagens/5-esportes-praticados-no-verao-que-voce-precisa-conhecer.jpeg" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </a>
                 </div>
             </div>
-            <div id="primeiro" class="secundario sombra lateral">
-                <div class="legenda_sub">
-                    <a href="">
-                        <h2>Novidades</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="detalhe">10/03/2022</p>
-                    </a>
-                </div>
-            </div>
-            <div id="segundo" class="secundario sombra lateral">
-                <div class="legenda_sub">
-                    <a href="">
-                        <h2>No Mundo</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="detalhe">10/03/2022</p>
-                    </a>
-                </div>
-            </div>
-            <div class="acesso" id="um">
-                <a href="">
-                    <img src="imagens/politica-monetaria-o-que-e-definicao-tipos-e-instrumentos-2-1024x614.jpg" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="acesso" id="dois">
-                <a href="">
-                    <img src="imagens/inovacao-875x500.jpg" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="acesso" id="tres">
-                <a href="">
-                    <img src="imagens/5-esportes-praticados-no-verao-que-voce-precisa-conhecer.jpeg" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </a>
-            </div>
+
         </main>
+
         <footer>
             <p>Sites de Notícias criado como modelo</p>
         </footer>
